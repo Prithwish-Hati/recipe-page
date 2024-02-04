@@ -7,9 +7,25 @@ body {
 .main {
   font-size: 1rem;
   padding: 2em;
+  max-width: 1440px;
+}
+
+section {
+  margin: 3em 0;
+}
+
+hr {
+  color: hsl(30, 18%, 87%);
 }
 
 .head-image {
+  width: 100vw;
+  margin: -2em 0 0 -2em;
+  border-radius: 0px;
+}
+
+.head-image__mob {
+  display: block;
   width: 100%;
 }
 
@@ -27,18 +43,28 @@ body {
 
 .callout {
   background-color: hsl(330, 100%, 98%);
-  padding: 0.5em 1.5em;
-  border-radius: 5%;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .callout-heading {
   font-family: "Outfit", sans-serif;
   color: hsl(332, 51%, 32%);
   font-size: 1.4rem;
+  margin-left: 1em;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.callout-list > li::marker {
+  color: hsl(332, 51%, 32%);
 }
 
 .list-item {
   margin-bottom: 0.8em;
+  text-indent: 1em;
 }
 
 .table {
@@ -72,4 +98,18 @@ td {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .head-image {
+    width: 100%;
+    border-radius: 1.5em;
+    max-height: 85vh;
+    margin: 0em;
+  }
+
+  .table {
+    text-align: left;
+    text-indent: 3em;
+  }
 }
